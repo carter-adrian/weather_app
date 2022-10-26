@@ -21,13 +21,6 @@ function currentCondition(city) {
         var iconCode = cityWeatherResponse.weather[0].icon;
         var iconURL = `https://openweathermap.org/img/w/${iconCode}.png`;
 
-        // WHEN I view current weather conditions for that city
-        // THEN I am presented with the city name
-        // the date
-        // an icon representation of weather conditions
-        // the temperature
-        // the humidity
-        // the wind speed
         var currentCity = $(`
             <h2 id="currentCity">
                 ${cityWeatherResponse.name} ${today} <img src="${iconURL}" alt="${cityWeatherResponse.weather[0].description}" />
@@ -63,7 +56,6 @@ function currentCondition(city) {
 
             // WHEN I view the UV index
             // THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-            // 0-2 green#3EA72D, 3-5 yellow#FFF300, 6-7 orange#F18B00, 8-10 red#E53210, 11+violet#B567A4
             if (uvIndex >= 0 && uvIndex <= 2) {
                 $("#uvIndexColor").css("background-color", "#3EA72D").css("color", "white");
             } else if (uvIndex >= 3 && uvIndex <= 5) {
@@ -150,15 +142,3 @@ $(document).on("click", ".list-group-item", function() {
     currentCondition(listCity);
 });
 
-// WHEN I open the weather dashboard
-// THEN I am presented with the last searched city forecast
-// $(document).ready(function() {
-//     var searchHistoryArr = JSON.parse(localStorage.getItem("city"));
-
-//     if (searchHistoryArr !== null) {
-//         var lastSearchedIndex = searchHistoryArr.length - 1;
-//         var lastSearchedCity = searchHistoryArr[lastSearchedIndex];
-//         currentCondition(lastSearchedCity);
-//         console.log(`Last searched city: ${lastSearchedCity}`);
-//     }
-// });

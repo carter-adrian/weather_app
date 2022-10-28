@@ -2,7 +2,7 @@
 
 Adrian's Repositiory: https://github.com/carter-adrian
 Respository for the app: https://github.com/carter-adrian/weather_app
-Deployed website: 
+Deployed website: https://carter-adrian.github.io/weather_app/
 
 
 ## Description
@@ -15,10 +15,10 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
-![alt text](assets/SS/Screenshot%201.png)
+![alt text](Screenshot%201.png)
 Shot of the screen prior to launch
 
-![alt text](assets/SS/Screenshot%202.png)
+![alt text](Screenshot%202.png)
 Screen fully rendered with last searches availble to be revisited
 
 
